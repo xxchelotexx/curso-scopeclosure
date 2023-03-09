@@ -25,13 +25,14 @@
 
 export function createPetList() {
     const petList = [];
-    return function addPet(pet){
+    function addPet(pet){
         if (pet){
         petList.push(pet);
         }
         console.log (petList);
         return petList;   
-    }         
+    }  
+    return addPet;       
 }
 
 
